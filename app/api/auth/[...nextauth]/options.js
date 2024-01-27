@@ -2,7 +2,7 @@ import GitHubProvider from 'next-auth/providers/github'
 import GoogleProvider from 'next-auth/providers/google'
 
 export const options = {
-  Providers: [
+  providers: [
     GitHubProvider({
       profile(profile) {
         console.log("Profile Github: ", profile);
@@ -17,8 +17,8 @@ export const options = {
           role: userRole
         }
       },
-      clientId: ProcessingInstruction.env.GITHUB_ID,
-      clientSecret: ProcessingInstruction.env.GITHUB_SECRET
+      clientId: process.env.GITHUB_ID,
+      clientSecret: process.env.GITHUB_SECRET
     }),
 
     GoogleProvider({
@@ -31,8 +31,8 @@ export const options = {
           role: userRole
         }
       },
-      clientId: ProcessingInstruction.env.GOGGLE_ID,
-      clientSecret: ProcessingInstruction.env.GOGGLE_SECRET
+      clientId: process.env.GOGGLE_ID,
+      clientSecret: process.env.GOGGLE_SECRET
     })
   ],
   callbacks: {
