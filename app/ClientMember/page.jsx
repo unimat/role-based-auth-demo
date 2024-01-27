@@ -2,7 +2,7 @@
 
 const Member = () => {
   return (
-    <div><h1>Client Sesiion</h1></div>
+    <div><h1>Client Session</h1></div>
   )
 }
 
