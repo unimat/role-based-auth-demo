@@ -1,8 +1,8 @@
-import React from 'react'
-
 const CreateUser = () => {
   return (
-    <div>Only Admins!</div>
+    <div>
+      <h1>You are an Admin</h1>
+    </div>
   )
 }
 
