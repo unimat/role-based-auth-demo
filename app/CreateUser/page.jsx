@@ -1,7 +1,9 @@
+import UserForm from "../(components)/UserForm"
+
 const CreateUser = () => {
   return (
     <div>
-      <h1>You are an Admin</h1>
+      <UserForm />
     </div>
   )
 }
